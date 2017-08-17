@@ -15,6 +15,7 @@
 		EE8F43231F45508C0089F0BA /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F43221F45508C0089F0BA /* SourceEditorExtension.swift */; };
 		EE8F43251F45508C0089F0BA /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F43241F45508C0089F0BA /* SourceEditorCommand.swift */; };
 		EE8F43291F45508C0089F0BA /* Uppercasify.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EE8F431B1F45508C0089F0BA /* Uppercasify.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EE8F432F1F45576E0089F0BA /* DividerCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F432E1F45576E0089F0BA /* DividerCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		EE8F43221F45508C0089F0BA /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		EE8F43241F45508C0089F0BA /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		EE8F43261F45508C0089F0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8F432E1F45576E0089F0BA /* DividerCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				EE8F43221F45508C0089F0BA /* SourceEditorExtension.swift */,
 				EE8F43241F45508C0089F0BA /* SourceEditorCommand.swift */,
+				EE8F432E1F45576E0089F0BA /* DividerCommand.swift */,
 				EE8F43261F45508C0089F0BA /* Info.plist */,
 				EE8F43201F45508C0089F0BA /* Supporting Files */,
 			);
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8F432F1F45576E0089F0BA /* DividerCommand.swift in Sources */,
 				EE8F43231F45508C0089F0BA /* SourceEditorExtension.swift in Sources */,
 				EE8F43251F45508C0089F0BA /* SourceEditorCommand.swift in Sources */,
 			);
