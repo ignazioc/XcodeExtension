@@ -11,7 +11,35 @@
 		EE8F430B1F4550670089F0BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F430A1F4550670089F0BA /* ViewController.swift */; };
 		EE8F430D1F4550670089F0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8F430C1F4550670089F0BA /* Assets.xcassets */; };
 		EE8F43101F4550670089F0BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8F430E1F4550670089F0BA /* Main.storyboard */; };
+		EE8F431E1F45508C0089F0BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8F431D1F45508C0089F0BA /* Cocoa.framework */; };
+		EE8F43231F45508C0089F0BA /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F43221F45508C0089F0BA /* SourceEditorExtension.swift */; };
+		EE8F43251F45508C0089F0BA /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F43241F45508C0089F0BA /* SourceEditorCommand.swift */; };
+		EE8F43291F45508C0089F0BA /* Uppercasify.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EE8F431B1F45508C0089F0BA /* Uppercasify.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE8F43271F45508C0089F0BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE8F42FD1F4550670089F0BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE8F431A1F45508C0089F0BA;
+			remoteInfo = Uppercasify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE8F432D1F45508C0089F0BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EE8F43291F45508C0089F0BA /* Uppercasify.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EE8F43051F4550670089F0BA /* XcodeExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +48,12 @@
 		EE8F430C1F4550670089F0BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8F430F1F4550670089F0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE8F43111F4550670089F0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8F431B1F45508C0089F0BA /* Uppercasify.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Uppercasify.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8F431D1F45508C0089F0BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EE8F43211F45508C0089F0BA /* Uppercasify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Uppercasify.entitlements; sourceTree = "<group>"; };
+		EE8F43221F45508C0089F0BA /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		EE8F43241F45508C0089F0BA /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		EE8F43261F45508C0089F0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +64,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE8F43181F45508C0089F0BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8F431E1F45508C0089F0BA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				EE8F43071F4550670089F0BA /* XcodeExtension */,
+				EE8F431F1F45508C0089F0BA /* Uppercasify */,
+				EE8F431C1F45508C0089F0BA /* Frameworks */,
 				EE8F43061F4550670089F0BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				EE8F43051F4550670089F0BA /* XcodeExtension.app */,
+				EE8F431B1F45508C0089F0BA /* Uppercasify.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +106,33 @@
 			path = XcodeExtension;
 			sourceTree = "<group>";
 		};
+		EE8F431C1F45508C0089F0BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE8F431D1F45508C0089F0BA /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE8F431F1F45508C0089F0BA /* Uppercasify */ = {
+			isa = PBXGroup;
+			children = (
+				EE8F43221F45508C0089F0BA /* SourceEditorExtension.swift */,
+				EE8F43241F45508C0089F0BA /* SourceEditorCommand.swift */,
+				EE8F43261F45508C0089F0BA /* Info.plist */,
+				EE8F43201F45508C0089F0BA /* Supporting Files */,
+			);
+			path = Uppercasify;
+			sourceTree = "<group>";
+		};
+		EE8F43201F45508C0089F0BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE8F43211F45508C0089F0BA /* Uppercasify.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,15 +143,34 @@
 				EE8F43011F4550670089F0BA /* Sources */,
 				EE8F43021F4550670089F0BA /* Frameworks */,
 				EE8F43031F4550670089F0BA /* Resources */,
+				EE8F432D1F45508C0089F0BA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EE8F43281F45508C0089F0BA /* PBXTargetDependency */,
 			);
 			name = XcodeExtension;
 			productName = XcodeExtension;
 			productReference = EE8F43051F4550670089F0BA /* XcodeExtension.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EE8F431A1F45508C0089F0BA /* Uppercasify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE8F432A1F45508C0089F0BA /* Build configuration list for PBXNativeTarget "Uppercasify" */;
+			buildPhases = (
+				EE8F43171F45508C0089F0BA /* Sources */,
+				EE8F43181F45508C0089F0BA /* Frameworks */,
+				EE8F43191F45508C0089F0BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Uppercasify;
+			productName = Uppercasify;
+			productReference = EE8F431B1F45508C0089F0BA /* Uppercasify.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +183,11 @@
 				ORGANIZATIONNAME = "Ignazio Calò";
 				TargetAttributes = {
 					EE8F43041F4550670089F0BA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 93RZTX3ZSS;
+						ProvisioningStyle = Automatic;
+					};
+					EE8F431A1F45508C0089F0BA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 93RZTX3ZSS;
 						ProvisioningStyle = Automatic;
@@ -112,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				EE8F43041F4550670089F0BA /* XcodeExtension */,
+				EE8F431A1F45508C0089F0BA /* Uppercasify */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +220,13 @@
 			files = (
 				EE8F430D1F4550670089F0BA /* Assets.xcassets in Resources */,
 				EE8F43101F4550670089F0BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8F43191F45508C0089F0BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +242,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE8F43171F45508C0089F0BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8F43231F45508C0089F0BA /* SourceEditorExtension.swift in Sources */,
+				EE8F43251F45508C0089F0BA /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE8F43281F45508C0089F0BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE8F431A1F45508C0089F0BA /* Uppercasify */;
+			targetProxy = EE8F43271F45508C0089F0BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EE8F430E1F4550670089F0BA /* Main.storyboard */ = {
@@ -247,13 +368,16 @@
 		EE8F43151F4550670089F0BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 93RZTX3ZSS;
 				INFOPLIST_FILE = XcodeExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ignazioc.XcodeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,13 +385,52 @@
 		EE8F43161F4550670089F0BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 93RZTX3ZSS;
 				INFOPLIST_FILE = XcodeExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ignazioc.XcodeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EE8F432B1F45508C0089F0BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Uppercasify/Uppercasify.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 93RZTX3ZSS;
+				INFOPLIST_FILE = Uppercasify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ignazioc.XcodeExtension.Uppercasify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE8F432C1F45508C0089F0BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Uppercasify/Uppercasify.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 93RZTX3ZSS;
+				INFOPLIST_FILE = Uppercasify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ignazioc.XcodeExtension.Uppercasify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -289,6 +452,14 @@
 			buildConfigurations = (
 				EE8F43151F4550670089F0BA /* Debug */,
 				EE8F43161F4550670089F0BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE8F432A1F45508C0089F0BA /* Build configuration list for PBXNativeTarget "Uppercasify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8F432B1F45508C0089F0BA /* Debug */,
+				EE8F432C1F45508C0089F0BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
