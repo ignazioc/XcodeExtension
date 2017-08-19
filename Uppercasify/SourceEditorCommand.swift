@@ -21,7 +21,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         buffer.selections.forEach({ selection in
             guard let selection = selection as? XCSourceTextRange else { return }
             
-            for lineIndex in selection.start.line..<selection.end.line {
+            for lineIndex in selection.start.line...selection.end.line {
                 var line = buffer.lines[lineIndex] as! String
                 
                 var startIndex = line.characters.startIndex
